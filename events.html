@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanchi AI - Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="design/img/not_title_logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="design/mp4/background_color.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="overlay"></div>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="design/img/not_title_logo.png" alt="Nanchi AI Logo" class="logo-icon">
+        </a>
+        
+        <div class="centered-nav">
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="ai.html" class="dropdown-toggle">Research <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="ai.html">AI</a>
+                        <a href="math.html">Math</a>
+                    </div>
+                </div>
+                <a href="community.html">Community</a>
+                <a href="documentation.html">Documentation</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="roadmap.html">Roadmap</a>
+            </div>
+        </div>
+        
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="burger-dropdown">
+                <a href="#login">Login</a>
+                <a href="#settings">Settings</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Events & News</h1>
+            <p>Stay updated with the latest announcements and milestones from Nanchi Research</p>
+        </section>
+
+        <section class="content-section">
+            <div class="events-container">
+                <h2>Recent Events</h2>
+                
+                <div class="timeline">
+                    <!-- Event 1 -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month">April</span>
+                            <span class="event-year">2025</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Nanchi Website Launch</h3>
+                            <div class="event-description">
+                                <p>We're proud to announce the official launch of the Nanchi Research website! This platform will serve as the central hub for all our projects, documentation, and community interactions.</p>
+                                <ul class="event-highlights">
+                                    <li>Showcase of our AI and Math research projects</li>
+                                    <li>Comprehensive documentation for contributors</li>
+                                    <li>Multilingual community portals</li>
+                                    <li>Event calendar and updates</li>
+                                </ul>
+                            </div>
+                            <div class="event-tags">
+                                <span class="event-tag">Website</span>
+                                <span class="event-tag">Announcement</span>
+                                <span class="event-tag">Milestone</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2 -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">09</span>
+                            <span class="event-month">April</span>
+                            <span class="event-year">2025</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Nanchi Research Founded</h3>
+                            <div class="event-description">
+                                <p>The Nanchi Research organization was officially established with the mission to advance open research in artificial intelligence and mathematical sciences.</p>
+                                <ul class="event-highlights">
+                                    <li>First projects on synthetic data generation started</li>
+                                    <li>GitHub organization created</li>
+                                    <li>A roadmap has been created for the first half of 2025</li>
+                                </ul>
+                            </div>
+                            <div class="event-tags">
+                                <span class="event-tag">Organization</span>
+                                <span class="event-tag">Launch</span>
+                                <span class="event-tag">Founding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="events-cta">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to receive notifications about future events and announcements</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="cta-button primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section dark-section">
+            <div class="content-wrapper">
+                <h2>Host Your Event With Us</h2>
+                <p>We welcome collaborations for workshops, hackathons, and research seminars. Contact us to discuss partnership opportunities.</p>
+                <div class="cta-buttons">
+                    <a href="community.html" class="cta-button primary">Contact Community Team</a>
+                    <a href="https://github.com/Nanchi-Research/Events" class="cta-button secondary" target="_blank">View Event Guidelines</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

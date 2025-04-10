@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanchi AI - Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="design/img/not_title_logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="design/mp4/background_color.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="overlay"></div>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="design/img/not_title_logo.png" alt="Nanchi AI Logo" class="logo-icon">
+        </a>
+        
+        <div class="centered-nav">
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="ai.html" class="dropdown-toggle">Research <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="ai.html">AI</a>
+                        <a href="math.html">Math</a>
+                    </div>
+                </div>
+                <a href="community.html">Community</a>
+                <a href="documentation.html" class="active">Documentation</a>
+                <a href="events.html">Events</a>
+                <a href="roadmap.html">Roadmap</a>
+            </div>
+        </div>
+        
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="burger-dropdown">
+                <a href="#login">Login</a>
+                <a href="#settings">Settings</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Documentation</h1>
+            <p>Comprehensive guides for working with our projects and contributing to research</p>
+        </section>
+
+        <section class="content-section">
+            <div class="documentation-container">
+                <h2>Getting Started</h2>
+                
+                <div class="doc-grid">
+                    <!-- GitHub Setup -->
+                    <div class="doc-card">
+                        <div class="doc-icon">
+                            <img src="design/documentation/github.png" alt="GitHub Icon">
+                        </div>
+                        <h3>GitHub Setup</h3>
+                        <div class="doc-content">
+                            <h4>Cloning Repositories</h4>
+                            <ol class="doc-steps">
+                                <li>Install <a href="https://git-scm.com/" target="_blank">Git</a></li>
+                                <li>Open terminal/command prompt</li>
+                                <li>Run:
+                                    <code class="doc-code">git clone https://github.com/Nanchi-Research/[repository-name].git</code>
+                                </li>
+                                <li>Navigate to project folder:
+                                    <code class="doc-code">cd [repository-name]</code>
+                                </li>
+                            </ol>
+                            
+                            <h4>Basic Git Commands</h4>
+                            <ul class="doc-commands">
+                                <li><code>git pull</code> - Get latest changes</li>
+                                <li><code>git status</code> - Check current changes</li>
+                                <li><code>git add .</code> - Stage all changes</li>
+                                <li><code>git commit -m "Your message"</code> - Commit changes</li>
+                                <li><code>git push</code> - Push to remote repository</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Python Environment -->
+                    <div class="doc-card">
+                        <div class="doc-icon">
+                            <img src="design/documentation/python.webp" alt="Python Icon">
+                        </div>
+                        <h3>Python Setup</h3>
+                        <div class="doc-content">
+                            <h4>Creating Virtual Environment</h4>
+                            <ol class="doc-steps">
+                                <li>Install Python 3.8+ from <a href="https://www.python.org/" target="_blank">python.org</a></li>
+                                <li>Create virtual environment:
+                                    <code class="doc-code">python -m venv venv</code>
+                                </li>
+                                <li>Activate environment:
+                                    <ul class="os-specific">
+                                        <li>Windows: <code>venv\Scripts\activate</code></li>
+                                        <li>Mac/Linux: <code>source venv/bin/activate</code></li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            
+                            <h4>Installing Requirements</h4>
+                            <ol class="doc-steps">
+                                <li>Navigate to project folder</li>
+                                <li>Install dependencies:
+                                    <code class="doc-code">pip install -r requirements.txt</code>
+                                </li>
+                                <li>Verify installation:
+                                    <code class="doc-code">python -c "import torch; print(torch.__version__)"</code>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Structure -->
+                    <div class="doc-card">
+                        <div class="doc-icon">
+                            <img src="design/documentation/strucutre.png" alt="Structure Icon">
+                        </div>
+                        <h3>Project Structure</h3>
+                        <div class="doc-content">
+                            <h4>Typical Layout</h4>
+                            <pre class="doc-tree">
+project-root/
+├── data/            # Dataset files
+├── docs/            # Documentation
+├── models/          # Pretrained models
+├── notebooks/       # Jupyter notebooks
+├── src/             # Source code
+│   ├── utils/       # Utility functions
+│   ├── training/    # Training scripts
+│   └── evaluation/  # Evaluation scripts
+├── requirements.txt # Python dependencies
+└── README.md        # Project overview</pre>
+                            
+                            <h4>Important Files</h4>
+                            <ul class="doc-files">
+                                <li><code>README.md</code> - Project overview and setup</li>
+                                <li><code>requirements.txt</code> - Python dependencies</li>
+                                <li><code>config.yaml</code> - Configuration parameters</li>
+                                <li><code>train.py</code> - Main training script</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Running Projects -->
+                    <div class="doc-card">
+                        <div class="doc-icon">
+                            <img src="design/documentation/bash.png" alt="Terminal Icon">
+                        </div>
+                        <h3>Running Projects</h3>
+                        <div class="doc-content">
+                            <h4>Basic Execution</h4>
+                            <ol class="doc-steps">
+                                <li>Activate your virtual environment</li>
+                                <li>Navigate to project root</li>
+                                <li>Run main script:
+                                    <code class="doc-code">python train.py --config configs/default.yaml</code>
+                                </li>
+                                <li>Monitor training (TensorBoard):
+                                    <code class="doc-code">tensorboard --logdir runs/</code>
+                                </li>
+                            </ol>
+                            
+                            <h4>Common Commands</h4>
+                            <ul class="doc-commands">
+                                <li><code>python train.py --help</code> - Show all options</li>
+                                <li><code>python evaluate.py --model checkpoint.pt</code> - Run evaluation</li>
+                                <li><code>jupyter notebook</code> - Launch Jupyter notebook server</li>
+                                <li><code>pytest tests/</code> - Run unit tests</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section dark-section">
+            <div class="content-wrapper">
+                <h2>Need More Help?</h2>
+                <p>Join our community channels for additional support and guidance from our team and other contributors.</p>
+                <div class="cta-buttons">
+                    <a href="community.html" class="cta-button primary">Visit Community</a>
+                    <a href="https://github.com/Nanchi-Research/Documentation/issues" class="cta-button secondary" target="_blank">Report Issues</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
